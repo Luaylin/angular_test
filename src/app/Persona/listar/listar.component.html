@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>USERS</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>UUID</th>
+                        <th>USER</th>
+                        <th>EMAIL</th>
+                        <th>PASSWORD</th>
+                        <th>ROLE</th>
+                        <th>FULLNAME</th>
+                        <th>AVATAR</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let persona of personas" class="text-center">
+                        <td>{{persona.id_user}}</td>
+                        <td>{{persona.tx_uid}}</td>
+                        <td>{{persona.tx_user}}</td>
+                        <td>{{persona.tx_email}}</td>
+                        <td>{{persona.tx_pass}}</td>
+                        <td>{{persona.tx_rol}}</td>
+                        <td>{{persona.tx_fullname}}</td>
+                        <td><img src="{{persona.tx_avatar}}" alt="imagen" style="width:100px;height:120px;"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
